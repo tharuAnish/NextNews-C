@@ -1,5 +1,10 @@
 import React from "react"
 
-export default function NewsDetailLayout({ children }) {
-  return <div>{children}</div>
+export default function NewsDetailLayout({ children, modal }) {
+  return (
+    <div>
+      {modal}
+      {children}
+    </div>
+  )
 }
